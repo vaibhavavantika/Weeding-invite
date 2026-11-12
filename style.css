@@ -382,3 +382,26 @@ svg{display:inline-block}
 @media (min-width:481px){
   .sec{padding-left:34px;padding-right:34px}
 }
+
+
+
+
+.scroll-hint {
+    display: inline-block;
+    font-size: 14px;
+    letter-spacing: 2px;
+    animation: scrollPop 1.5s ease-in-out infinite;
+}
+
+@keyframes scrollPop {
+    0%, 100% {
+        transform: translateY(0);
+        opacity: 0.65;
+    }
+
+    50% {
+        transform: translateY(-8px);
+        opacity: 1;
+    }
+}
+
